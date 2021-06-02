@@ -1,0 +1,130 @@
+@import "_config.scss";
+
+header {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: $red;
+  color: $white;
+  height: 120px;
+
+  .name {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+
+  }
+
+  nav,
+  nav ul,
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    position: absolute;
+    top: 70%; left: 50%;
+    margin-left: -156px;
+    @include translateY(-50%);
+
+    ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 60px;
+      font-family: 'Merriweather', serif;
+      font-size: 30px;
+      text-align: center;
+
+    }
+
+    &.last {
+      margin: 0;
+    }
+
+    a {
+      font-size: 19px;
+      line-height: normal;
+      color: $white;
+    }
+
+  }
+
+
+}
+
+  .Homepage {
+    background: $lightGrey;
+  }
+
+  img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 17%;
+    height: auto;
+  }
+
+
+  h1 {
+      text-align: left;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Merriweather', serif;
+  }
+
+
+footer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: $red;
+  color: $white;
+  min-height: 100px;
+  bottom: 0;
+
+
+
+  .name {
+    position: absolute;
+    top: 50%; left: 50%;
+    margin-left: -50px;
+    @include translateY(-50%);
+    font-family: 'Bebas Neue', cursive;
+  }
+
+  nav,
+  nav ul,
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    position: absolute;
+    top: 50%; right: 15px;
+    @include translateY(-50%);
+
+    ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    &.last {
+      margin: 0;
+    }
+
+    a {
+      font-size: 19px;
+      line-height: normal;
+      color: $white;
+    }
+
+  }
+}
